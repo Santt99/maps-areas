@@ -128,8 +128,8 @@ class MapsAreasCalculator(object):
         intersections_points = []
 
         intersections_points.append(intersections[0])
-        return intersections_points
+        return points, vertices, segments, edges, intersections_points
 
     def get_areas(self):
-        res = self.get_intersecctions()
-        print(res)
+        points, vertices, segments, edges, intersections_points = self.get_intersecctions()
+        print(intersections_points)
